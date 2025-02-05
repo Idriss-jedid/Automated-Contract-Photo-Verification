@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.PredictionPage3"
+             Title="Forward">
+    <StackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+        <Label Text="Test Direction: Forward" 
+               FontSize="24" 
+               HorizontalOptions="Center" />
+        <Image x:Name="ResultImage" 
+               HeightRequest="200" 
+               HorizontalOptions="Center" 
+               Aspect="AspectFit" />
+        <Button Text="Process Image"
+                BackgroundColor="Green"
+                TextColor="White"
+                Clicked="ProcessAndCheck" />
+        <Label x:Name="PredictionLabel"
+         FontSize="18"
+         TextColor="Black"
+         HorizontalOptions="Center" />
+        <Button x:Name="NextButton"
+                Text="Next"
+                BackgroundColor="Green"
+                TextColor="White"
+                IsEnabled="False"
+                Clicked="NextPage" />
+        <Button x:Name="RefreshButton"
+                Text="Refresh"
+                 BackgroundColor="Green"
+                 TextColor="White"
+                 IsEnabled="False"
+                Clicked="RefreshPage" />
+      
+    </StackLayout>
+</ContentPage>
